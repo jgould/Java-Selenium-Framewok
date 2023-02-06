@@ -1,6 +1,6 @@
-SeleniumJavaDemo
+# SeleniumJavaDemo
 
-Install Java
+## Install Java
 
 Check to see if Java is already installed, open the command promt and enter java -version
 
@@ -18,11 +18,11 @@ java version "17.0.6" 2023-01-17 LTS Java(TM) SE Runtime Environment (build 17.0
 
 This means that Java has been successfully installed
 
-Setup Eclipse
+## Setup Eclipse
 
 Download eclipse and install Make sure that the latest JDK is selected (the one you installed previously) Help -> Eclipse Marketplace -> Search for Cucumber plugin Install the first result (Cucumber Eclipse Plugin)
 
-Setup Project
+## Setup Project
 
 File -> New -> Project Maven -> Maven Project -> Create a simple project (skip archetype selection) Group Id: [a unique base name of the company or group that created the project] Artifact Id: [a unique name of the project]
 
@@ -32,7 +32,7 @@ Back in eclipse open the pom.xml file Add a few lines between the and And a  blo
 
 There will sometimes be an error displayed on the screen related to the JRE Compiler Right click on the JRE System Library then select Workspace default JavaSE (jre) then Apply and Close
 
-Gherkin Format
+## Gherkin Format
 
 Now to test that everything up to this point is working properly.
 
@@ -44,7 +44,7 @@ For the purposes of this demo delete the contents to start fresh At the top file
 
 Now right click on the test scroll down to Run As then then click on Cucumber File There maybe be some red the text at the top of the console, this can be safely ignored You'll then see that the scenario has been skipped due to having undefined step, followed by some suggested code to be implemented
 
-Step Definitions
+## Step Definitions
 
 Copy the suggested code from the console Right click on the package that contains the feature file and create a new class Given the file a name (StepDefs for example) Paste the code that copied from the console Hover your mouse pointer over each one of the key works (Given, When, Then) and import each
 
